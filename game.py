@@ -9,12 +9,49 @@ choices =["rock", "paper", "scissors"]
 
 
 
-player_lives = 5
-computer_lives = 5
+player_lives = 1
+computer_lives = 1
 
-total_lives = 5
+total_lives = 1
 
 player = False # True and False are Booleans - data types that can be truthy or falsey
+
+def winorlose(status):
+	#print ("called winorlose', status)
+
+	if status == "won":
+		pre_message = "You are yuuuuugest winner ever!"
+
+	else:
+
+		pre_message = "You done trumped it, loser!"
+
+	print(pre_message + " Would you like to play again?")
+
+
+	choice = input ("Y / N?")
+
+	if choice== "Y" or choice =="y":
+
+		global player_lives
+		global computer_lives
+		global player
+		#reset the game and start over
+		player_lives = 1
+		computer_lives = 1
+		player = False
+
+	elif choice =="N" or choice == "n":
+			#exit message and quit
+			print ("You chose to quit. Better luck next time!")
+			exit()
+
+	else:
+			print ("Make a valid choice Y or N")
+			#this is generating a bug -> need to fix this check
+			choice = input ("Y / N")
+
+
 
 # set up our game loop
 while player ==  False:
@@ -72,46 +109,48 @@ while player ==  False:
 
 	# check player lives and AI lives
 	if player_lives == 0:
-		print ("You lost! Loser! Would you like to play again?")
-		choice = input ("Y / N")
+		winorlose("lost")
+		# print ("You lost! Loser! Would you like to play again?")
+		# choice = input ("Y / N")
 
-		if choice == "Y" or choice == "y":
-			#reset the game and start over again
-			player_lives = 2
-			computer_lives = 2
-			player = False
+		# if choice == "Y" or choice == "y":
+		# 	#reset the game and start over again
+		# 	player_lives = 2
+		# 	computer_lives = 2
+		# 	player = False
 
-		elif choice == "N" or choice =="n":
-			# exit message and quit
-			print (" You chose to quit. Better luck next time!")
-			exit()
+		# elif choice == "N" or choice =="n":
+		# 	# exit message and quit
+		# 	print (" You chose to quit. Better luck next time!")
+		# 	exit()
 
-		else:
+		# else:
 
-			print ("Make a valid selection - Y or N" )
-			#this is generating a bug -> need to fix this check
-			choice = input ("Y / N")
+		# 	print ("Make a valid selection - Y or N" )
+		# 	#this is generating a bug -> need to fix this check
+		# 	choice = input ("Y / N")
 
 	elif computer_lives == 0:
-		print ("You won! Winner! Would you like to play again?")
-		choice = input ("Y / N")
+		winorlose("won")
+		# print ("You won! Winner! Would you like to play again?")
+		# choice = input ("Y / N")
 
-		if choice == "Y" or choice == "y":
-			#reset the game and start over again
-			player_lives = 2
-			computer_lives = 2
-			player = False
+		# if choice == "Y" or choice == "y":
+		# 	#reset the game and start over again
+		# 	player_lives = 2
+		# 	computer_lives = 2
+		# 	player = False
 
-		elif choice == "N" or choice =="n":
-			# exit message and quit
-			print (" You chose to quit. Better luck next time!")
-			exit()
+		# elif choice == "N" or choice =="n":
+		# 	# exit message and quit
+		# 	print (" You chose to quit. Better luck next time!")
+		# 	exit()
 
-		else:
+		# else:
 
-			print ("Make a valid selection - Y or N" )
-			#this is generating a bug -> need to fix this check
-			choice = input ("Y / N")
+		# 	print ("Make a valid selection - Y or N" )
+		# 	#this is generating a bug -> need to fix this check
+		# 	choice = input ("Y / N")
 
 	else:
 		player = False

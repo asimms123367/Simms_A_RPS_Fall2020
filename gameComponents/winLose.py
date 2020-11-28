@@ -1,31 +1,34 @@
-#define a win/lose function and refer to it (invoke it) in our game loop
+from gameComponents import gameVars
+# Defining a win or lose function
 def winorlose(status):
-	#print ("called winorlose', status)
+
 
 	if status == "won":
-		pre_message = "You are yuuuuugest winner ever!"
-
+		pre_message = "You are the yuuuuuuugest winner ever! "
 	else:
+		pre_message = "You done trumped it, loser! "
 
-		pre_message = "You done trumped it, loser!"
+	print(pre_message + "Would you like to play again?")
+	
+	choice = input("Y / N? ")
 
-	print(pre_message + " Would you like to play again?")
-
-
-	choice = input ("Y / N?")
-
-	if choice== "Y" or choice =="y":
-		#reset the game and start over
-		gameVars.player_lives = 1
-		ganeVars.computer_lives = 1
+	if choice == "Y" or choice == "y":
+		gameVars.player_lives = 5
+		gameVars.computer_lives = 5
 		gameVars.player = False
 
-	elif choice =="N" or choice == "n":
-			#exit message and quit
-			print ("You chose to quit. Better luck next time!")
+	elif choice == "N" or choice == "n":
+		print("You chose to quit. Better luck next time!")
+		exit()
+	else:
+		print("Make a valid choice - Y or N")
+		choice = input("Y / N")
+		if choice == "Y" or choice == "y":
+			gameVars.player_lives = 5
+			gameVars.computer_lives = 5
+			gameVars.player = False
+		else:
+			print("You chose to quit. Better luck next time!")
 			exit()
 
-	else:
-			print ("Make a valid choice Y or N")
-			#this is generating a bug -> need to fix this check
-			choice = input ("Y / N")
+		

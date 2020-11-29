@@ -1,9 +1,10 @@
-## <title>Rock Paper Scissors - Python text-based take on a classic!</title>
+## <h1 style="background-color:DodgerBlue;">Rock Paper Scissors - Python Text-Based Classic!</h1>
 
-Pick your weapon and play against the computer - you will only get a virtual sting if you lose!
+
+<b>Pick your weapon and play against the computer. It promises to be a world of fun!! You will only get a virtual sting if you lose!</b>
 
 ### Prerequisites
-All you need is <a href="https://www.python.org/download/releases/3.0/">Download Python3</a> to play
+All you need to do is <a href="https://www.python.org/download/releases/3.0/">Download Python3</a> to play
 
 ### Usage
 Clone the project, navigate to the directory cd directory name and run the game.py file in a Python 3 Terminal window for MacOS/Linux
@@ -19,7 +20,7 @@ Choose your weapon wisely!
 
 The computer chooses first; just follow the prompts. It is gonna be a world of fun!
 
-<em> Built with Python 3 </em>
+<em> Built with <a href="http://www.wiki.python.org/moin/beginnersguide">Python 3</a> </em>
 
 
 
@@ -32,13 +33,6 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Enjoy!# Simms_A_RPS_Fall2020
+Enjoy!
 
 
-https://www.python.org/download/releases/3.0/
-Python.org
-Python 3.0 Release
-The official home of the Python Programming Language
-
-[5:31 PM]
-http://www.wiki.python.org/moin/beginnersguide
